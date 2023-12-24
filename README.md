@@ -1,4 +1,4 @@
-# Name: Python Challenge 1
+# Name: Module 3 Challenge (Customer Banking System)
 
 ## Description
 
