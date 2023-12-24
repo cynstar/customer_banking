@@ -21,11 +21,11 @@ def create_cd_account(balance, interest_rate, months):
 
     # Calculate interest earned
     # ADD YOUR CODE HERE
-    cd_interest_rate = float(input("Please enter the savings account interest rate: "))
+    cd_interest_rate = (1 + interest_rate / 12) ** months
 
     # Update the CD account balance by adding the interest earned
     # ADD YOUR CODE HERE
-    cd_updated_balance = float(balance) * (1 + interest_rate)
+    cd_updated_balance = balance * (interest_rate)
 
     # Pass the updated_balance to the set balance method using the instance of the CDAccount class.
     # ADD YOUR CODE HERE
