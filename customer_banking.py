@@ -13,7 +13,7 @@ def main():
     # ADD YOUR CODE HERE
     savings_balance = float(input("Please enter your savings balance: "))
     #CE - converting user's percentage entry into a decimal
-    savings_interest = float(input("Please enter the APR (%) for your savings account: "))/100
+    savings_interest = float(input("Please enter the APR (%) for your savings account: "))
     # savings_interest = float(savings_interest) / 100
     savings_maturity = int((input("Please enter the number of months to calculate for your savings account: ")))
 
@@ -28,8 +28,8 @@ def main():
     # Prompt the user to set the CD balance, interest rate, and months for the CD account.
     # ADD YOUR CODE HERE
     cd_balance = (float(input("Please enter your CD balance: ")))
-    cd_interest = (float(input("Please enter the APR (%) for your CD account: "))) / 100
-    cd_maturity = (float(input("Please enter the number of months to calculate for the CD: ")))
+    cd_interest = (float(input("Please enter the APR (%) for your CD account: "))) 
+    cd_maturity = (int(input("Please enter the number of months to calculate for the CD: ")))
     # Call the create_cd_account function and pass the variables from the user.
     updated_cd_balance, interest_earned = CDAccount.create_cd_account(cd_balance, cd_interest, cd_maturity)
 
